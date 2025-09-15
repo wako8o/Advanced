@@ -13,7 +13,7 @@ while command != 'END' and not is_crash_happens:
 
     if command == 'green':
         time = green_light
-        while lane_of_cars and time > 0 and is_crash_happens:
+        while lane_of_cars and time > 0 and not is_crash_happens:
 
             car = lane_of_cars.popleft()
             if len(car) <= time:
